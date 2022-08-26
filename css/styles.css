@@ -15,6 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: var(--main-text-color);
+  box-sizing: border-box;
 }
 
 .logo-header {
@@ -52,10 +53,26 @@ body {
 .logo-footer > span {
   color: var(--button-text-color);
 }
+.flex-header-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
 
 .menu {
+  display: flex;
   list-style: none;
+  justify-content: space-between;
+  width: 200%;
+
 }
+
+.contact-header {
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
 .menu a {
   text-decoration: none;
   font-weight: 500;
