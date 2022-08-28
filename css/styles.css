@@ -8,6 +8,7 @@
   --button-backgroundnhover-color: #2196f3;
   --alternative-button-background-color: #f5f4fa;
   --mainheadline-footer-color: #2f303a;
+  --cards-border: #eeeeee;
 }
 
 /* Box-sizing for whole website */
@@ -42,9 +43,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 211px;
-  padding-right: 227px;
-  width: 100%;
+  padding-left: 15px;
+  padding-right: 27px;
   margin: auto;
   border: 1px solid red;
 }
@@ -328,6 +328,9 @@ button:focus {
 /* MAIN Portfolio */
 /* List & Job categories cards */
 
+.main {
+  background-color: white;
+}
 .container-cards {
   list-style: none;
   display: flex;
@@ -364,7 +367,9 @@ button:focus {
 
 .card-item {
   margin: 0%;
+  padding: 0%;
   flex-basis: calc(100% / 3);
+  border: 1px solid var(--cards-border);
 }
 
 .card-img {
@@ -372,6 +377,7 @@ button:focus {
   height: 404px;
   background-color: var(--button-text-color);
   margin: 0%;
+  padding: 0%;
 }
 
 /* FOOTER */
@@ -379,8 +385,10 @@ button:focus {
 .footer-container {
   display: flex;
   flex-direction: column;
+  gap: 8px;
   height: 252px;
   background-color: var(--mainheadline-footer-color);
+  border: 1px solid orange;
 }
 
 .logo-footer {
@@ -392,6 +400,7 @@ button:focus {
   font-size: 26px;
   line-height: 1.9375em;
   letter-spacing: 0.03em;
+  padding-top: 60px;
 
   color: var(--button-backgroundnhover-color);
 }
@@ -402,8 +411,21 @@ button:focus {
 
 .contact-footer {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0%;
+  padding-top: 20px;
 }
 
+.contact {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin: 0;
+  padding: 0;
+}
 .contact-footer a {
   text-decoration: none;
   font-style: normal;
