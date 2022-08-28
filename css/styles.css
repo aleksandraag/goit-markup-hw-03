@@ -24,7 +24,7 @@ body {
   font-family: "Roboto", "Raleway", sans-serif;
   font-weight: 400;
   box-sizing: border-box;
-
+  width: 100%;
   margin: 0 auto;
   padding: 0%;
 }
@@ -45,8 +45,8 @@ body {
   padding-left: 211px;
   padding-right: 227px;
   width: 100%;
-  border: 1px solid red;
   margin: auto;
+  border: 1px solid red;
 }
 
 .logo-header {
@@ -116,13 +116,13 @@ body {
   color: var(--button-backgroundnhover-color);
 }
 
+.header-bottom-line {
+  border-bottom: 1px solid var(--contactncontent-text-color);
+}
+
 /* SECTIONS - main content */
 
 /* Main headline & Button */
-
-.headline-line {
-  border-bottom: 1px solid var(--contactncontent-text-color);
-}
 
 .main-headline {
   background-color: var(--mainheadline-footer-color);
@@ -182,29 +182,39 @@ body {
   color: var(--button-text-color);
 }
 
-/* Buttons categories */
+/* PORTFOLIO Buttons categories */
 
-.button {
-  list-style: none;
+.section {
+  padding-top: 94px;
 }
-.button button {
+
+.button-categories {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  border: 2px solid green;
+}
+button {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625em;
   background-color: var(--alternative-button-background-color);
-
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: 1px solid var(--alternative-button-background-color);
+  border-radius: 4px;
 }
 
-.button button:hover {
+button:hover {
   background-color: var(--button-backgroundnhover-color);
   color: var(--button-text-color);
 }
-.button button:focus {
+button:focus {
   background-color: var(--button-backgroundnhover-color);
   color: var(--button-text-color);
 }
@@ -270,7 +280,7 @@ body {
 .team-container {
   background-color: var(--alternative-button-background-color);
   margin-top: 94px;
-  height: 648;
+  height: 648px;
   border: 1px solid green;
 }
 
@@ -284,7 +294,6 @@ body {
   padding-left: 15px;
   border: 1px solid red;
   margin-bottom: 94px;
-  width: 1200px;
 }
 
 .team-item {
@@ -316,17 +325,18 @@ body {
   color: var(--contactncontent-text-color);
 }
 
+/* MAIN Portfolio */
 /* List & Job categories cards */
 
-.cards {
+.container-cards {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 30px;
   padding-right: 15px;
   padding-left: 15px;
   border: 1px solid red;
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .category-headline {
@@ -334,22 +344,44 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 2.25em;
-
   letter-spacing: 0.06em;
-
   color: var(--main-text-color);
 }
 
 .category {
   font-size: 16px;
   line-height: 1.875em;
-
   letter-spacing: 0.03em;
-
   color: var(--contactncontent-text-color);
 }
 
+.container-cards {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  margin: 0%;
+  flex-basis: calc(100% / 3);
+}
+
+.card-img {
+  width: 370px;
+  height: 404px;
+  background-color: var(--button-text-color);
+  margin: 0%;
+}
+
 /* FOOTER */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  height: 252px;
+  background-color: var(--mainheadline-footer-color);
+}
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -359,7 +391,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9375em;
-
   letter-spacing: 0.03em;
 
   color: var(--button-backgroundnhover-color);
@@ -376,12 +407,9 @@ body {
 .contact-footer a {
   text-decoration: none;
   font-style: normal;
-
   font-size: 14px;
   line-height: 1.5em;
-
   letter-spacing: 0.03em;
-
   color: var(--footer-text-color);
 }
 
@@ -393,6 +421,8 @@ body {
 }
 
 .address {
+  font-family: "Roboto";
+  font-style: normal;
   font-size: 14px;
   line-height: 1.5em;
 
