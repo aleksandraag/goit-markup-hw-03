@@ -42,17 +42,15 @@ body {
 .header-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
   padding-left: 15px;
   padding-right: 27px;
   margin: auto;
-  border: 1px solid red;
 }
 
 .logo-header {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
-
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -68,14 +66,15 @@ body {
 
 .menu {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   gap: 46px;
+  margin-left: 93px;
 }
 
 .contact-header {
   display: flex;
   gap: 50px;
+  margin-left: auto;
 }
 
 .menu a {
@@ -85,6 +84,7 @@ body {
   line-height: 1em;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+  margin-left: auto;
 }
 .menu a:hover {
   color: var(--button-backgroundnhover-color);
@@ -99,13 +99,11 @@ body {
 
 .contact-header a {
   text-decoration: none;
-
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1px;
   letter-spacing: 0.02em;
-
   color: var(--contactncontent-text-color);
 }
 
@@ -133,7 +131,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  border: 2px solid blue;
 }
 
 .main-title {
@@ -144,12 +141,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--button-text-color);
-  margin: 0 auto;
+
   padding-top: 200px;
   padding-left: 252px;
   padding-right: 252px;
-  width: 100%;
-  border: 1px solid fuchsia;
 }
 
 .main-button {
@@ -182,43 +177,6 @@ body {
   color: var(--button-text-color);
 }
 
-/* PORTFOLIO Buttons categories */
-
-.section {
-  padding-top: 94px;
-}
-
-.button-categories {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  padding: 0;
-  border: 2px solid green;
-}
-button {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625em;
-  background-color: var(--alternative-button-background-color);
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  border: 1px solid var(--alternative-button-background-color);
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: var(--button-backgroundnhover-color);
-  color: var(--button-text-color);
-}
-button:focus {
-  background-color: var(--button-backgroundnhover-color);
-  color: var(--button-text-color);
-}
-
 /* Lorem */
 
 .lorem-headline {
@@ -241,7 +199,6 @@ button:focus {
   margin-top: 94px;
   margin-bottom: 94px;
   gap: 30px;
-  border: 1px solid red;
 }
 
 .lorem-content {
@@ -249,7 +206,6 @@ button:focus {
   line-height: 1.5em;
   letter-spacing: 0.03em;
   color: var(--contactncontent-text-color);
-  border: 2px solid green;
 }
 
 /* Secondary headline & work images */
@@ -272,7 +228,6 @@ button:focus {
   padding-left: 15px;
   padding-right: 15px;
   gap: 30px;
-  border: 2px solid purple;
 }
 
 /* Secondary headline & Team images, members, job titles */
@@ -281,7 +236,6 @@ button:focus {
   background-color: var(--alternative-button-background-color);
   margin-top: 94px;
   height: 648px;
-  border: 1px solid green;
 }
 
 .list-team {
@@ -292,18 +246,19 @@ button:focus {
   gap: 30px;
   padding-right: 15px;
   padding-left: 15px;
-  border: 1px solid red;
   margin-bottom: 94px;
 }
 
 .team-item {
   margin: 0 auto;
-  border: 2px solid turquoise;
   background-color: var(--button-text-color);
 }
 
 .team-img {
   margin: 0 auto;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-headline {
@@ -311,22 +266,64 @@ button:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875em;
-
+  text-align: center;
   letter-spacing: 0.03em;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 10px;
   color: var(--main-text-color);
 }
 
 .job {
   font-size: 16px;
   line-height: 1.1875em;
-
+  text-align: center;
   letter-spacing: 0.03em;
-
+  margin: 0 auto;
+  padding-bottom: 30px;
   color: var(--contactncontent-text-color);
 }
 
 /* MAIN Portfolio */
 /* List & Job categories cards */
+
+/* PORTFOLIO Buttons categories */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-categories {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  margin-bottom: 30px;
+}
+button {
+  font-family: "Roboto";
+  font-style: normal;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625em;
+  background-color: var(--alternative-button-background-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: var(--button-backgroundnhover-color);
+  color: var(--button-text-color);
+}
+button:focus {
+  background-color: var(--button-backgroundnhover-color);
+  color: var(--button-text-color);
+}
 
 .main {
   background-color: white;
@@ -339,7 +336,7 @@ button:focus {
   gap: 30px;
   padding-right: 15px;
   padding-left: 15px;
-  border: 1px solid red;
+  margin: 0 auto;
 }
 
 .category-headline {
@@ -349,6 +346,10 @@ button:focus {
   line-height: 2.25em;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-bottom: 4px;
+  padding-top: 0;
 }
 
 .category {
@@ -356,27 +357,37 @@ button:focus {
   line-height: 1.875em;
   letter-spacing: 0.03em;
   color: var(--contactncontent-text-color);
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  padding-top: 0;
 }
 
 .container-cards {
   list-style: none;
   display: flex;
-  height: 100%;
   flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .card-item {
-  margin: 0%;
+  margin: 0 auto;
   padding: 0%;
-  flex-basis: calc(100% / 3);
-  border: 1px solid var(--cards-border);
+  flex-basis: calc((100% - 60px) / 3) 100%;
 }
 
 .card-img {
-  width: 370px;
-  height: 404px;
   background-color: var(--button-text-color);
-  margin: 0%;
+  margin: 0 auto;
+  padding: 0%;
+}
+
+.figcaption-border {
+  border-left: 1px solid var(--cards-border);
+  border-bottom: 1px solid var(--cards-border);
+  border-right: 1px solid var(--cards-border);
+  margin: 0 auto;
   padding: 0%;
 }
 
@@ -386,9 +397,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  height: 252px;
   background-color: var(--mainheadline-footer-color);
-  border: 1px solid orange;
 }
 
 .logo-footer {
@@ -401,7 +410,6 @@ button:focus {
   line-height: 1.9375em;
   letter-spacing: 0.03em;
   padding-top: 60px;
-
   color: var(--button-backgroundnhover-color);
 }
 
@@ -416,6 +424,7 @@ button:focus {
   gap: 9px;
   margin: 0%;
   padding-top: 20px;
+  padding-bottom: 60px;
 }
 
 .contact {
