@@ -37,6 +37,11 @@ body {
   margin: 0 auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* HEADER */
 
 .header-container {
@@ -197,7 +202,6 @@ body {
   padding-left: 15px;
   gap: 30px;
   padding-bottom: 0;
-  margin: 0;
 }
 
 .lorem-content {
@@ -205,8 +209,6 @@ body {
   line-height: 1.5em;
   letter-spacing: 0.03em;
   color: var(--contactncontent-text-color);
-  margin: 0;
-  padding: 0;
 }
 
 /* Secondary headline & work images */
@@ -288,11 +290,6 @@ body {
 
 /* PORTFOLIO Buttons categories */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .button-categories {
   list-style: none;
   display: flex;
@@ -368,13 +365,13 @@ button:focus {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .card-item {
   margin: 0 auto;
   padding: 0%;
-  flex-basis: calc((100% - 60px) / 3) 100%;
+  flex-basis: calc((100% - 60px) / 3);
 }
 
 .card-img {
@@ -398,10 +395,9 @@ img {
 /* FOOTER */
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
   gap: 8px;
   background-color: var(--mainheadline-footer-color);
+  padding: 60px 0;
 }
 
 .logo-footer {
@@ -413,7 +409,6 @@ img {
   font-size: 26px;
   line-height: 1.9375em;
   letter-spacing: 0.03em;
-  padding-top: 60px;
   margin: 0;
   color: var(--button-backgroundnhover-color);
 }
@@ -429,7 +424,6 @@ img {
   gap: 9px;
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 60px;
 }
 
 .contact {
