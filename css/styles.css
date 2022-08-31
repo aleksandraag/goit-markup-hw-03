@@ -9,6 +9,7 @@
   --alternative-button-background-color: #f5f4fa;
   --mainheadline-footer-color: #2f303a;
   --cards-border: #eeeeee;
+  --headline-bottom-line: #ececec;
 }
 
 /* Box-sizing for whole website */
@@ -20,7 +21,6 @@
 
 /* Styles for whole website */
 body {
-  background-color: var(--background-color);
   color: var(--main-text-color);
   font-family: "Roboto", "Raleway", sans-serif;
   font-weight: 400;
@@ -115,7 +115,7 @@ body {
 }
 
 .header-bottom-line {
-  border-bottom: 1px solid var(--contactncontent-text-color);
+  border-bottom: 1px solid var(--headline-bottom-line);
 }
 
 /* SECTIONS - main content */
@@ -193,12 +193,11 @@ body {
 .list-lorem {
   list-style: none;
   display: flex;
-
   padding-right: 15px;
   padding-left: 15px;
-  margin-top: 94px;
-  margin-bottom: 94px;
   gap: 30px;
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .lorem-content {
@@ -206,6 +205,8 @@ body {
   line-height: 1.5em;
   letter-spacing: 0.03em;
   color: var(--contactncontent-text-color);
+  margin: 0;
+  padding: 0;
 }
 
 /* Secondary headline & work images */
@@ -217,7 +218,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-  margin-top: 94px;
+  margin-top: 0;
+  padding-top: 0;
 }
 .list-img {
   list-style: none;
@@ -234,8 +236,6 @@ body {
 
 .team-container {
   background-color: var(--alternative-button-background-color);
-  margin-top: 94px;
-  height: 648px;
 }
 
 .list-team {
@@ -246,7 +246,6 @@ body {
   gap: 30px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-bottom: 94px;
 }
 
 .team-item {
@@ -300,7 +299,7 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 button {
   font-family: "Roboto";
@@ -314,6 +313,7 @@ button {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 button:hover {
@@ -383,6 +383,10 @@ button:focus {
   padding: 0%;
 }
 
+img {
+  display: block;
+}
+
 .figcaption-border {
   border-left: 1px solid var(--cards-border);
   border-bottom: 1px solid var(--cards-border);
@@ -410,6 +414,7 @@ button:focus {
   line-height: 1.9375em;
   letter-spacing: 0.03em;
   padding-top: 60px;
+  margin: 0;
   color: var(--button-backgroundnhover-color);
 }
 
@@ -422,7 +427,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   gap: 9px;
-  margin: 0%;
+  margin: 0;
   padding-top: 20px;
   padding-bottom: 60px;
 }
